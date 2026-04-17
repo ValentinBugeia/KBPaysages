@@ -203,7 +203,7 @@ button { font-family: var(--font-b); }
   letter-spacing: 0.02em;
 }
 .logo-img {
-  height: 52px;
+  height: 70px;
   width: auto;
   display: block;
   transition: var(--t);
@@ -212,7 +212,7 @@ button { font-family: var(--font-b); }
   opacity: 0.85;
 }
 .footer-brand .logo-img {
-  height: 64px;
+  height: 90px;
 }
 .nav-links {
   display: flex;
