@@ -202,19 +202,17 @@ button { font-family: var(--font-b); }
   flex-shrink: 0;
   letter-spacing: 0.02em;
 }
-.logo-kb {
-  font-family: var(--font-h);
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--gold);
-  line-height: 1;
+.logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  transition: var(--t);
 }
-.logo-text {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  color: var(--white);
-  padding-top: 3px;
+.logo:hover .logo-img {
+  opacity: 0.85;
+}
+.footer-brand .logo-img {
+  height: 64px;
 }
 .nav-links {
   display: flex;
