@@ -207,7 +207,6 @@ button { font-family: var(--font-b); }
   width: auto;
   display: block;
   transition: var(--t);
-  filter: url(#remove-white);
 }
 .logo:hover .logo-img {
   opacity: 0.85;
