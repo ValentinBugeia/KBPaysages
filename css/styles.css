@@ -293,7 +293,7 @@ button { font-family: var(--font-b); }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=85');
+  background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&q=85');
   background-size: cover;
   background-position: center 30%;
   will-change: transform;
