@@ -202,18 +202,29 @@ button { font-family: var(--font-b); }
   flex-shrink: 0;
   letter-spacing: 0.02em;
 }
+.logo {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
 .logo-img {
-  height: 70px;
+  height: 56px;
   width: auto;
   display: block;
   transition: var(--t);
 }
-.logo:hover .logo-img {
-  opacity: 0.85;
+.logo-text {
+  font-family: var(--font-b);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: #4a7a2d;
+  transition: var(--t);
 }
-.footer-brand .logo-img {
-  height: 90px;
-}
+.logo:hover .logo-img { opacity: 0.85; }
+.logo:hover .logo-text { color: #6aab42; }
+.footer-brand .logo-img { height: 70px; }
+.footer-brand .logo-text { font-size: 0.85rem; }
 .nav-links {
   display: flex;
   gap: 2.5rem;
