@@ -663,8 +663,35 @@ button { font-family: var(--font-b); }
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--green-light);
   flex-shrink: 0;
+}
+.gold-dot { background: var(--gold); }
+
+.about-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+.about-block {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+.about-block-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.about-block .about-features { padding: 0; background: none; border: none; border-radius: 0; }
+.about-block .feature-item { font-size: 0.84rem; }
+
+@media (max-width: 640px) {
+  .about-blocks { grid-template-columns: 1fr; }
 }
 
 /* ============================================================
