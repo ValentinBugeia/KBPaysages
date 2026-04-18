@@ -251,19 +251,22 @@ button { font-family: var(--font-b); }
 .nav-links a:hover { color: var(--white); }
 .nav-links a:hover::after { width: 100%; }
 
-.btn-nav {
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 0.6rem 1.5rem;
-  background: var(--gold);
-  color: #000;
-  border-radius: 2rem;
-  flex-shrink: 0;
-  transition: var(--t);
+.nav-devis {
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  padding: 0.5rem 1.2rem !important;
+  background: var(--gold) !important;
+  color: #000 !important;
+  border-radius: 2rem !important;
+  transition: var(--t) !important;
 }
-.btn-nav:hover { background: var(--gold-light); transform: translateY(-1px); }
+.nav-devis:hover {
+  background: var(--gold-light) !important;
+  color: #000 !important;
+  transform: translateY(-1px);
+}
+.nav-devis::after { display: none !important; }
 
 .hamburger {
   display: none;
