@@ -427,6 +427,17 @@ button { font-family: var(--font-b); }
 .footer-links ul { display: flex; flex-direction: column; gap: 0.75rem; }
 .footer-links a { font-size: 0.875rem; color: rgba(255,255,255,0.65); transition: var(--t); }
 .footer-links a:hover { color: var(--gold-light); }
+
+.info-card-instagram { cursor: pointer; }
+.info-card-instagram:hover .info-icon { color: #e1306c; border-color: #e1306c; background: #fde8f0; }
+.info-card-instagram:hover { border-color: #e1306c; }
+
+.footer-instagram {
+  display: flex; align-items: center; gap: 0.5rem;
+  color: rgba(255,255,255,0.6); font-size: 0.85rem; transition: var(--t);
+}
+.footer-instagram:hover { color: var(--gold-light); }
+
 .footer-bottom {
   display: flex; justify-content: space-between; align-items: center;
   padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15);
