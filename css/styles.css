@@ -301,16 +301,30 @@ button { font-family: var(--font-b); }
    ============================================================ */
 .gallery { padding: 8rem 0; background: var(--bg); }
 .gallery-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 260px; gap: 1rem;
-  padding: 0 2rem; max-width: 1400px; margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 280px;
+  gap: 1rem;
+  padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .gallery-item {
   position: relative; overflow: hidden; border-radius: 0.75rem; cursor: pointer;
   border: 1px solid var(--border); box-shadow: var(--shadow);
 }
-.gallery-item.large { grid-row: span 2; }
-.gallery-item.tall  { grid-row: span 2; }
+.gallery-wide { grid-column: span 2; }
+.gallery-tall { grid-row: span 2; }
+
+@media (max-width: 900px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-wide { grid-column: span 2; }
+  .gallery-tall { grid-row: span 1; }
+}
+@media (max-width: 540px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-wide { grid-column: span 1; }
+}
 .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.65s var(--ease); }
 .gallery-item:hover img { transform: scale(1.07); }
 .gallery-overlay {
